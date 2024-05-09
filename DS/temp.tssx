@@ -1,0 +1,38 @@
+
+// find log2(n) in O(log n) time
+function foo(n) {
+  return n === 1 ? 0 : 1 + foo(Math.floor(n / 2));
+}
+
+console.log(foo(4));
+
+
+// Write a function to print the binary representation of a number
+function printBinary(n) {
+  if (n === 0) return;
+  printBinary(Math.floor(n / 2));
+  console.log(n % 2);
+}
+
+printBinary(5);
+
+Why to use recursion ?
+
+Algorithm :
+  DP 
+  Backtracking
+  Divide and Conqure
+
+Problems:
+  Tower of Hanoi
+  DFS
+
+All the recusrion has iterative solutions 
+
+To solve a bigger problem, we can solve the sub problems and combine them to solve the bigger problem
+
+Auxilarry space is used in recursion and is disadvantage of recursion
+
+str.substring(startIndex, endIndex) // endIndex is exclusive
+
+check all problems
